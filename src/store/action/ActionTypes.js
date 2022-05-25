@@ -1,0 +1,4 @@
+export const FETCH_POST_LIST = "FETCH_POST_LIST"
+export const FETCH_COMMENT = "FETCH_COMMENT"
+export const RESET = "RESET"
+export const RESET_COMMENTS = "RESET_COMMENTS"

@@ -1,0 +1,11 @@
+
+$marginLeftRight: 61px;
+$white: #ffffff;
+$black: #000000;
+
+@mixin btn ($background, $color){
+	background: $background;
+	color: $color;
+	padding: 10px 20px;	
+	margin: 15px 6px;
+}

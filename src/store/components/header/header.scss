@@ -1,0 +1,43 @@
+@import'../../../optionStyle.scss';
+
+.wrap__header {
+	display: flex;
+	width: 100%;
+
+	.header {
+		display: flex;
+		background-color: black;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		flex-wrap: wrap;
+		
+
+		.header__nameSite {
+			text-transform: uppercase;
+			color: #ffffff;
+			padding: 5px;
+			margin-left: $marginLeftRight;
+		}
+
+		.header__btn {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 5px;
+			margin-right: $marginLeftRight;
+
+			.btn {
+				@include btn($white, $black);
+
+				a {
+					text-decoration: none;
+					color: $black;
+				}
+			}
+
+			.pepoleBuyTicket {
+				cursor: pointer;
+			}
+		}
+	}
+}

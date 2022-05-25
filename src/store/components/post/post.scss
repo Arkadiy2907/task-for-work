@@ -1,0 +1,91 @@
+@import "../../../optionStyle.scss";
+
+.wrapper__postSmall {
+	margin: 0 $marginLeftRight;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 15rem;
+
+	.postSmall__title {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: 40px;
+		padding: 5px;
+		margin: 16px 0;
+	}
+
+	.postSmall__info {
+		padding: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 15px;
+
+		.postSmallItem {
+			border: 1px solid $black;
+			padding: 10px 20px;
+			cursor: pointer;
+			max-width: 39%;
+			width: 30%;
+			min-width: 10%;
+			height: 7rem;
+			overflow-y: auto;
+		}
+	}
+}
+
+.wrapper__postFull {
+	margin: 0 $marginLeftRight;
+	display: flex;
+	flex-direction: column;
+
+	.postFull__title {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: 40px;
+		padding: 5px;
+		margin: 16px 0;
+	}
+
+	.postFull__info {
+		padding: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 15px;
+
+		.PostFullItemAndBtn {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 30%;
+			margin-bottom: 11px;
+
+			.PostFullItem {
+				border: 1px solid $black;
+				padding: 10px 20px;
+				cursor: pointer;
+				height: 5rem;
+				overflow: auto;
+			}
+
+			.wrap__btn {
+				display: flex;
+				justify-content: end;
+				
+				.btn {
+					@include btn($black, $white);
+					cursor: pointer;
+	
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}			
+		}
+	}
+}

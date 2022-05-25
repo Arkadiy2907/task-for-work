@@ -1,0 +1,56 @@
+@import "../../../optionStyle.scss";
+
+.wrap__page2 {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.wrap__aboutUser {
+		width: 100%;
+		margin: 30px 0 20px;
+		overflow-x: auto;
+
+		.aboutUser__info {
+			border: 1px solid $black;
+			border-collapse: collapse;
+			margin: 20px auto;
+			width: 100%;
+
+			td {
+				border: 1px solid $black;
+				padding: 9px;
+				vertical-align: middle;
+			}
+
+			.aboutUser__userName {
+				text-align: left;
+				font-family: "Alegreya Sans SC";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 35px;
+				line-height: 40px;
+			}
+
+			.aboutUser__info {
+				text-align: center;
+				font-family: "Open Sans";
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 17px;
+			}
+		}
+	}
+
+	.wrap__postSmall {
+		width: 100%;
+		border: 1px solid $black;	
+		max-height: 30%;	
+	}
+
+	.wrap__postFull {
+		width: 100%;
+		border: 1px solid $black;
+		border-top: none;
+		overflow: auto;
+	}
+}

@@ -1,0 +1,121 @@
+@import "../../../optionStyle.scss";
+
+.carusel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 36rem;
+	background: url(../../../images/6412a542721.png);
+	background-size: cover;
+
+	.carusel__namePartyDate {
+		color: $white;
+		height: 76%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		h1 {
+			font-family: "Alegreya Sans SC";
+			color: $white;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 60px;
+			background-color: rgba($color: #000000, $alpha: 0.5);
+			box-shadow: 0 0 100px black;
+		}
+
+		p {
+			font-family: "Alegreya Sans SC";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 36px;
+			background-color: rgba($color: #000000, $alpha: 0.5);
+			box-shadow: 0 15px 50px black;
+		}
+	}
+
+	.curusel__arrowsBuy {
+		display: flex;
+		justify-content: space-between;
+		height: 12%;
+		width: 100%;
+
+		.btn {
+			@include btn($white, $black);
+		}
+
+		.curusel__arrowsBuy_prew {
+			@include btn($black, $white);
+			border: 2px solid $white;
+			margin-left: $marginLeftRight;
+		}
+
+		.curusel__arrowsBuy_next {
+			margin-right: $marginLeftRight;
+		}
+	}
+}
+
+.textBuyTicket {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 15px $marginLeftRight 5px;
+	font-size: 1.5rem;
+
+	span {
+		color: gray;
+	}
+}
+
+.userCards {
+	margin: 0 $marginLeftRight;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 2px;
+		margin: 0 2px;
+		list-style-type: none;
+
+		.userCards__item {
+			border: 1px solid #dadada;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 10px;
+			margin: 13px;
+			width: 20%;
+
+			.userCards__item__user {
+				margin: 14px 0;
+			}
+			
+			.wrap__btn {
+				display: flex;
+
+				.btn {
+					@include btn($black, $white);
+					cursor: pointer;
+					display: flex;
+
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+
+			&:hover {
+				border-color: $black;
+			}
+		}
+	}
+}

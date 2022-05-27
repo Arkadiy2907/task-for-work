@@ -62,6 +62,12 @@ form {
 	padding: 2px;
 	margin: 5px;
 
+	.attention {
+		color: red;
+		margin: 2px;
+		padding: 4px;
+	}
+
 	.allForm {
 		display: flex;
 		flex-direction: column;

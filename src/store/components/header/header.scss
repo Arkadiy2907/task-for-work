@@ -37,6 +37,11 @@
 
 			.pepoleBuyTicket {
 				cursor: pointer;
+				@include btn(rgb(233, 255, 208), $black);
+
+				&:hover {
+					@include btn(rgb(2, 128, 65), $black);
+				}
 			}
 		}
 	}

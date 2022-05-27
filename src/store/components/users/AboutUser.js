@@ -1,7 +1,7 @@
 import React from 'react';
 import { arrUserId } from '../AllFakeData/ArrUserId';
 import { useParams } from "react-router-dom"
-/* import "./userId.scss" */
+import "./user.scss"
 
 const AboutUser = () => {
 	const { userId } = useParams();
@@ -13,11 +13,11 @@ const AboutUser = () => {
 	}, [memoPerson])
 
 	return userData && (
-		<>
-			<table className="aboutUser__info">
-				<tr className='aboutUser__userName'>
+		<table className="aboutUser__info" >
+			<tbody>
+				<tr className='aboutUser__userName'>					
 					<td>&nbsp;</td>
-					<td colspan="5">{userData.surname}&nbsp;{userData.name}</td>
+					<td colSpan="5">{userData.surname}&nbsp;{userData.name}</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr className="aboutUser__info">
@@ -29,9 +29,8 @@ const AboutUser = () => {
 					<td>{userData.company}</td>
 					<td>&nbsp;</td>
 				</tr>
-			</table>
-
-		</>
+			</tbody>
+		</table >
 	)
 }
 

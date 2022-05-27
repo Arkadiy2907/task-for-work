@@ -14,14 +14,14 @@ const Comments = () => {
 	const nowPosts = !!posts && posts.find(item => item.id === Number(postId))
 
 	const [nowPost, setNowPost] = React.useState(nowPosts)
-	const [returnPosts, setReturnPosts] = React.useState(nowPost.userId)
+	const [returnPosts, setReturnPosts] = React.useState(nowPost?.userId)
 
 	React.useEffect(() => {
 		setNowPost(nowPosts)
 	}, [nowPosts]);
 
 	React.useEffect(() => {
-		setReturnPosts(nowPost.userId)
+		setReturnPosts(nowPost?.userId)
 	}, [nowPost]);
 
 	const [addComment, setAddComment] = React.useState(false)
@@ -33,8 +33,8 @@ const Comments = () => {
 		<div className="wrap_postComment">
 			<div className="wrap__post">
 				<div className="post">
-					<h3>Заголовок поста: {nowPost.title}</h3>
-					<p><b>Обсуждаемый пост:</b> {nowPost.body}</p>
+					<h3>Заголовок поста: {nowPost?.title}</h3>
+					<p><b>Обсуждаемый пост:</b> {nowPost?.body}</p>
 				</div>
 			</div>
 			<div className='wrap__comment'>

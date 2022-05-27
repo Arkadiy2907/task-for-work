@@ -74,7 +74,7 @@
 
 			.wrap__btn {
 				display: flex;
-				justify-content: end;
+				justify-content: flex-end;
 				
 				.btn {
 					@include btn($black, $white);

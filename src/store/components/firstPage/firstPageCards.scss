@@ -92,11 +92,13 @@
 			align-items: flex-start;
 			padding: 10px;
 			margin: 13px;
-			width: 20%;
+			min-width: 22%;
 
 			.userCards__item__user {
 				margin: 14px 0;
 			}
+			
+
 			
 			.wrap__btn {
 				display: flex;

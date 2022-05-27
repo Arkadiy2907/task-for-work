@@ -32,7 +32,7 @@ const AddComment = ({ closeNewComment, userId }) => {
 	const [formId, setFormId] = React.useState(randomNum())
 
 	const onSubmit = () => {
-		dispatch(addCommentForm(formData))		
+		dispatch(addCommentForm(formData))
 		reset()
 	}
 
@@ -45,6 +45,9 @@ const AddComment = ({ closeNewComment, userId }) => {
 		<>
 			<div className="addComment">
 				<form onSubmit={handleSubmit(onSubmit)}>
+					<div className="attention">
+						<p><b> Все поля должны быть заполнены!</b></p>
+					</div>
 					<div className="allForm">
 						<input type="hidden" {...register(`id`)} value={formId} />
 						<input type="hidden" {...register(`userId`)} value={userId} />
@@ -75,7 +78,7 @@ const AddComment = ({ closeNewComment, userId }) => {
 							<input
 								type="email"
 								onChange={showInputValue}
-								value={formData.email}								
+								value={formData.email}
 								{...register("email", {
 									required: "Email обязателен",
 									validate: (value) =>
@@ -109,7 +112,7 @@ const AddComment = ({ closeNewComment, userId }) => {
 							</div>
 						</div>
 					</div>
-					<div className="wrap__btn btn__valid">						
+					<div className="wrap__btn btn__valid">
 						<button type="button" disabled={!isValid} onClick={closForm} className='btn'>submit</button>
 					</div>
 				</form>

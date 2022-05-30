@@ -1,0 +1,187 @@
+.wrap_postComment {
+  margin: 0 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrap_postComment .wrap__post {
+  border: 1px solid #000000;
+  margin: 10px 0;
+}
+
+.wrap_postComment .wrap__post h3 {
+  padding: 5px;
+}
+
+.wrap_postComment .wrap__post p {
+  margin: 5px 15px;
+  border: 1px solid #dadada;
+  padding: 15px;
+  overflow: auto;
+}
+
+.wrap_postComment .wrap__comment {
+  border: 1px solid #000000;
+  margin: 5px 0;
+}
+
+.wrap_postComment .wrap__comment h3 {
+  padding: 5px;
+}
+
+.wrap_postComment .wrap__comment .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  margin: 0 2px;
+  list-style-type: none;
+}
+
+.wrap_postComment .wrap__comment .comment .PostFullItem {
+  border: 1px solid #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  margin: 7px;
+  overflow: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #000000;
+  max-width: 34rem;
+  min-height: 10rem;
+  padding: 2px;
+  margin: 5px;
+}
+
+form .attention {
+  color: red;
+  margin: 2px;
+  padding: 4px;
+}
+
+form .allForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 5px;
+}
+
+form .allForm .nameForm,
+form .allForm .emailForm,
+form .allForm .bodyForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 5rem;
+}
+
+form .allForm .nameForm .errors,
+form .allForm .emailForm .errors,
+form .allForm .bodyForm .errors {
+  font-size: smaller;
+  color: red;
+}
+
+form .allForm textarea {
+  height: 3rem;
+  width: 100%;
+}
+
+form .allForm input,
+form .allForm textarea {
+  border: 0;
+  overflow: hidden;
+  padding: 2px;
+  margin: 2px;
+  background-color: #ececec;
+}
+
+form .allForm input:hover,
+form .allForm textarea:hover {
+  cursor: pointer;
+}
+
+.wrap__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrap__btn .btn {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 15px 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.wrap__btn .btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.wrap__btn .btnA {
+  padding: 12px 20px;
+}
+
+.btn__valid {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}

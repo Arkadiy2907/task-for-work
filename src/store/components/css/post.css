@@ -1,4 +1,5 @@
-.wrapper {
+.wrapper__postSmall {
+  margin: 0 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,98 +7,46 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 15rem;
 }
 
-.wrapper h2 {
-  margin: 10px;
-}
-
-.wrapper .wrap_list {
-  max-width: 75rem;
-  margin: 5px;
-}
-
-.wrapper .wrap_list .post_list {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 77rem;
-}
-
-.wrapper .wrap_list .post_list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 2px solid #464646;
-  border-radius: 5px;
-  padding: 2px;
-  margin: 2px;
-  height: 5rem;
-}
-
-.wrapper .wrap_list .post_list li p {
-  border: 2px solid grey;
-  border-radius: 5px;
+.wrapper__postSmall .postSmall__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
   padding: 5px;
-  overflow: hidden;
+  margin: 16px 0;
 }
 
-.wrapper .wrap_list .post_list li p:nth-child(1) {
-  width: 7%;
-}
-
-.wrapper .wrap_list .post_list li p:nth-child(2) {
-  width: 6%;
-}
-
-.wrapper .wrap_list .post_list li p:nth-child(3) {
-  width: 20%;
-}
-
-.wrapper .wrap_list .post_list li p:nth-child(4) {
-  width: 67%;
-}
-
-.wrapper form {
+.wrapper__postSmall .postSmall__info {
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid gray;
-  border-radius: 5px;
-  max-width: 80rem;
-  min-height: 10rem;
-  padding: 2px;
-  margin: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-.wrapper form .allForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.wrapper__postSmall .postSmall__info .postSmallItem {
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  cursor: pointer;
+  max-width: 39%;
+  width: 30%;
+  min-width: 10%;
+  height: 7rem;
+  overflow-y: auto;
 }
 
-.wrapper form .allForm .idForm,
-.wrapper form .allForm .titleForm,
-.wrapper form .allForm .bodyForm {
+.wrapper__postFull {
+  margin: 0 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,38 +54,71 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.wrapper__postFull .postFull__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  padding: 5px;
+  margin: 16px 0;
+}
+
+.wrapper__postFull .postFull__info {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.wrapper__postFull .postFull__info .PostFullItemAndBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30%;
+  margin-bottom: 11px;
+}
+
+.wrapper__postFull .postFull__info .PostFullItemAndBtn .PostFullItem {
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  cursor: pointer;
   height: 5rem;
+  overflow: auto;
 }
 
-.wrapper form .allForm .idForm .errors,
-.wrapper form .allForm .titleForm .errors,
-.wrapper form .allForm .bodyForm .errors {
-  color: red;
+.wrapper__postFull .postFull__info .PostFullItemAndBtn .wrap__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.wrapper form .allForm textarea {
-  height: 3rem;
-  width: 30rem;
-}
-
-.wrapper form .allForm input,
-.wrapper form .allForm textarea {
-  border: 0;
-  overflow: hidden;
-  padding: 2px;
-  margin: 2px;
-  background-color: #ececec;
-}
-
-.wrapper form .allForm input:hover,
-.wrapper form .allForm textarea:hover {
+.wrapper__postFull .postFull__info .PostFullItemAndBtn .wrap__btn .btn {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 15px 6px;
   cursor: pointer;
 }
 
-.wrapper .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2px;
-  margin: 2px;
+.wrapper__postFull .postFull__info .PostFullItemAndBtn .wrap__btn .btn a {
+  color: #ffffff;
+  text-decoration: none;
 }

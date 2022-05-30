@@ -4,7 +4,16 @@ import UserCards from './UserCards';
 import { arrUserId } from '../AllFakeData/ArrUserId';
 import { getPost } from '../../../api';
 import { resetAll } from '../../action/Action';
+import { Carousel } from "react-responsive-carousel";
+import { arrCarusel } from '../AllFakeData/ArrUserId';
+import CaruselItem from './CaruselItem';
+// import img1 from "../../../images/1.jpg"
+// import img2 from "../../../images/2.jpg"
+// import img3 from "../../../images/3.jpg"
+// import img4 from "../../../images/4.jpg"
+// import img5 from "../../../images/5.jpg"
 import "./firstPageCards.scss"
+// import 'react-responsive-carousel/lib/styles/carousel.css';
 
 const FirstPage = () => {
 	const dispatch = useDispatch()
@@ -16,22 +25,24 @@ const FirstPage = () => {
 
 	return (
 		<>
-			<section className="carusel">
-				<div className="carusel__namePartyDate">
-					<h1>Twenty One Pilots</h1>
-					<p>28.02.23 В 21.00</p>
-				</div>
-				<div className="curusel__arrowsBuy">
-					<div className="curusel__arrowsBuy_prew btn">
-						<p>&lt;</p>
-					</div>
-					<div className="curusel__arrowsBuy_buy btn">
-						<p>Купить билет</p>
-					</div>
-					<div className="curusel__arrowsBuy_next btn">
-						<p>&gt;</p>
-					</div>
-				</div>
+			<section>
+				<Carousel
+					showThumbs={false}
+					showStatus={false}
+					infiniteLoop
+					autoPlay
+					useKeyboardArrows
+					transitionTime={1000}
+				>
+					{!!arrCarusel && arrCarusel.map(item =>
+						<CaruselItem
+							img={item.img}
+							title={item.title}
+							body={item.body}
+							key={item.id}
+						/>
+					)}
+				</Carousel>
 			</section>
 			<section className="textBuyTicket" >
 				<h2>Купили билеты</h2>

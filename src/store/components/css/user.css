@@ -1,0 +1,61 @@
+.wrap__page2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap__page2 .wrap__aboutUser {
+  width: 100%;
+  margin: 30px 0 20px;
+  overflow-x: auto;
+}
+
+.wrap__page2 .wrap__aboutUser .aboutUser__info {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.wrap__page2 .wrap__aboutUser .aboutUser__info td {
+  border: 1px solid #000000;
+  padding: 9px;
+  vertical-align: middle;
+}
+
+.wrap__page2 .wrap__aboutUser .aboutUser__info .aboutUser__userName {
+  text-align: left;
+  font-family: "Alegreya Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.wrap__page2 .wrap__aboutUser .aboutUser__info .aboutUser__info {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.wrap__page2 .wrap__postSmall {
+  width: 100%;
+  border: 1px solid #000000;
+  max-height: 30%;
+}
+
+.wrap__page2 .wrap__postFull {
+  width: 100%;
+  border: 1px solid #000000;
+  border-top: none;
+  overflow: auto;
+}

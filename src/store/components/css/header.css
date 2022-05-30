@@ -1,0 +1,66 @@
+.wrap__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrap__header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap__header .header .header__nameSite {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px;
+  margin-left: 61px;
+}
+
+.wrap__header .header .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  margin-right: 61px;
+}
+
+.wrap__header .header .header__btn .btn {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  margin: 15px 6px;
+}
+
+.wrap__header .header .header__btn .btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrap__header .header .header__btn .pepoleBuyTicket {
+  cursor: pointer;
+  background: #e9ffd0;
+  color: #000000;
+  padding: 10px 20px;
+  margin: 15px 6px;
+}
+
+.wrap__header .header .header__btn .pepoleBuyTicket:hover {
+  background: #028041;
+  color: #000000;
+  padding: 10px 20px;
+  margin: 15px 6px;
+}

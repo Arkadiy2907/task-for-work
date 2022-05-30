@@ -65,6 +65,16 @@
 	}
 }
 
+/********************************************
+	BREAKPOINT WIDTHS
+********************************************/
+/********************************************
+	FONTS
+********************************************/
+/********************************************
+	COLOURS
+********************************************/
+
 .carousel {
 	position: relative;
 	width: 100%;
@@ -249,25 +259,21 @@
 		margin: auto;
 		width: 100%;
 		transition: height 0.15s ease-in;
-
-		.axis-horizontal .slider {
-			display: flex;
-		}
-
-		.axis-horizontal .slider .slide {
-			flex-direction: column;
-			flex-flow: column;
-		}
-
-		.axis-vertical {
-			display: flex;
-		}
-
-		.axis-vertical .slider {
-			flex-direction: column;
-		}
 	}
 
+	.slider-wrapper.axis-horizontal .slider {
+		display: flex;
+	}
+	.slider-wrapper.axis-horizontal .slider .slide {
+		flex-direction: column;
+		flex-flow: column;
+	}
+	.slider-wrapper.axis-vertical {
+		display: flex;
+	}
+	.slider-wrapper.axis-vertical .slider {
+		flex-direction: column;
+	}
 	.slider {
 		margin: 0;
 		padding: 0;
@@ -275,11 +281,9 @@
 		list-style: none;
 		width: 100%;
 	}
-
 	.slider.animated {
 		transition: all 0.35s ease-in-out;
 	}
-	
 	.slide {
 		min-width: 100%;
 		margin: 0;
@@ -316,7 +320,7 @@
 			transition: opacity 0.35s ease-in-out;
 		}
 	}
-
+	
 	.control-dots {
 		position: absolute;
 		bottom: 0;
@@ -363,4 +367,3 @@
 		bottom: 0;
 	}
 }
-

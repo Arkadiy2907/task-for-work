@@ -31,7 +31,7 @@ const AddComment = ({ closeNewComment, userId }) => {
 
 	const [formId, setFormId] = React.useState(randomNum())
 
-	const onSubmit = () => {
+	const onSubmit = () => {		
 		dispatch(addCommentForm(formData))
 		reset()
 	}

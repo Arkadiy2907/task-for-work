@@ -19,5 +19,5 @@ export const arrCarusel = [
 	{ img: `${img2}`, id: 2, title: "Twenty Pilots", body: "22.04.23 в 21:00" },
 	{ img: `${img3}`, id: 3, title: "One Pilots", body: "27.07.23 в 23:00" },
 	{ img: `${img4}`, id: 4, title: "Twenty Pilots", body: "12.08.23 в 21:00" },
-	{ img: `${img5}`, id: 5, title: "Twenty One Pilotsг", body:"22.02.23 в 21:00" },
+	{ img: `${img5}`, id: 5, title: "Twenty One Pilots", body:"22.02.23 в 21:00" },
 ]
